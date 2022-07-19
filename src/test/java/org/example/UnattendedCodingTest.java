@@ -10,10 +10,10 @@ public class UnattendedCodingTest extends BaseTest {
     public void validateName() {
 
         given()
-                //.when()
+                .when()
                    .get("/Categories/6327/Details.json?catalogue=false")
                 .then()
-                   .log().all()
+                   //.log().all()
                    .statusCode(200)
                    .body("Name", equalTo("Carbon credits"));
 
@@ -22,8 +22,8 @@ public class UnattendedCodingTest extends BaseTest {
     public void validateCanRelist() {
 
         given()
-                //.when()
-                //.get( "/Categories/6327/Details.json?catalogue=false")
+                .when()
+                .get( "/Categories/6327/Details.json?catalogue=false")
                 .then()
                 .statusCode(200)
                 .body("CanRelist", equalTo(true));
@@ -33,8 +33,8 @@ public class UnattendedCodingTest extends BaseTest {
     public void ValidateGallery() {
 
         given()
-                //.when()
-                //.get("/Categories/6327/Details.json?catalogue=false")
+                .when()
+                .get("/Categories/6327/Details.json?catalogue=false")
                 .then()
                 .statusCode(200)
                 .body("Promotions[1].Description", equalTo("Good position in category"));
