@@ -28,10 +28,6 @@ public class CategoriesDetailsTest extends BaseTest {
                 .body("CanRelist", equalTo(true));
     }
 
-    /**
-     * Test that the promotions element with Name = "Gallery" has a Description
-     * that contains the text "Good position in category".
-     */
     @Test
     public void ValidatePromotionWithNameGalleryHasCorrectDescription() {
         String name = "Gallery";
