@@ -23,16 +23,16 @@
 
 ### How this code runs:
 
-_There are three class files - BaseTest, TestPathUtil, and CategoriesDetailsTest.
+*There are three class files - BaseTest, TestPathUtil, and CategoriesDetailsTest.*
 
-_BaseTest is a class created to have a base URI, separate from the main test area.
-_I created this class so that if there are any changes to the base URI, those updates only need to be made in this class and they will be updated for the whole test. 
+*BaseTest is a class created to have a base URI, separate from the main test area.*
+*I created this class so that if there are any changes to the base URI, those updates only need to be made in this class and they will be updated for the whole test.*
 
-_TestPathUtil - this class was created to improve the design and performance of the test overall. By creating this class I have generated an editable path in case the categories ID changes. 
+*TestPathUtil - this class was created to improve the design and performance of the test overall. By creating this class I have generated an editable path in case the categories ID changes.* 
 
-_There is also an additional private method contained within the CategoriesDetailsTest class, called getCategoryDetails. This is a method that allows me to keep the class TestBaseUtil separate from the rest of the test code.
+*There is also an additional private method contained within the CategoriesDetailsTest class, called getCategoryDetails. This is a method that allows me to keep the class TestBaseUtil separate from the rest of the test code.*
 
-_CategoriesDetailsTest is the class where all the tests that validate the acceptance criteria are contained. The tests are below:
+*CategoriesDetailsTest is the class where all the tests that validate the acceptance criteria are contained. The tests are below:*
 
 * Test validateExactName - this test should if a name from the source API matched the acceptance criteria: Name = “Carbon credits”
 * Test validateCanRelist - this test should return a Boolean response for the acceptance criteria: CanRelist = true
